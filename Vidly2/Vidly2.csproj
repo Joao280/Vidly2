@@ -227,6 +227,22 @@
     <Compile Include="Migrations\202005201745439_PopulateGenreTypes.Designer.cs">
       <DependentUpon>202005201745439_PopulateGenreTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005201801137_AddPropsToMovies.cs" />
+    <Compile Include="Migrations\202005201801137_AddPropsToMovies.Designer.cs">
+      <DependentUpon>202005201801137_AddPropsToMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201801417_PopulateMovies.cs" />
+    <Compile Include="Migrations\202005201801417_PopulateMovies.Designer.cs">
+      <DependentUpon>202005201801417_PopulateMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201835372_RequirePropInMoviesAndCostumers.cs" />
+    <Compile Include="Migrations\202005201835372_RequirePropInMoviesAndCostumers.Designer.cs">
+      <DependentUpon>202005201835372_RequirePropInMoviesAndCostumers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201837227_RequireMovieName.cs" />
+    <Compile Include="Migrations\202005201837227_RequireMovieName.Designer.cs">
+      <DependentUpon>202005201837227_RequireMovieName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -301,6 +317,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -357,6 +374,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005201745439_PopulateGenreTypes.resx">
       <DependentUpon>202005201745439_PopulateGenreTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201801137_AddPropsToMovies.resx">
+      <DependentUpon>202005201801137_AddPropsToMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201801417_PopulateMovies.resx">
+      <DependentUpon>202005201801417_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201835372_RequirePropInMoviesAndCostumers.resx">
+      <DependentUpon>202005201835372_RequirePropInMoviesAndCostumers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201837227_RequireMovieName.resx">
+      <DependentUpon>202005201837227_RequireMovieName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

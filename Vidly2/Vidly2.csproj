@@ -211,9 +211,26 @@
     <Compile Include="Migrations\202005201650406_ChangeBirthDateToNullable.Designer.cs">
       <DependentUpon>202005201650406_ChangeBirthDateToNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005201735223_EmptyMigration.cs" />
+    <Compile Include="Migrations\202005201735223_EmptyMigration.Designer.cs">
+      <DependentUpon>202005201735223_EmptyMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201739029_DbSetMovies.cs" />
+    <Compile Include="Migrations\202005201739029_DbSetMovies.Designer.cs">
+      <DependentUpon>202005201739029_DbSetMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201744313_AddGenreType.cs" />
+    <Compile Include="Migrations\202005201744313_AddGenreType.Designer.cs">
+      <DependentUpon>202005201744313_AddGenreType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005201745439_PopulateGenreTypes.cs" />
+    <Compile Include="Migrations\202005201745439_PopulateGenreTypes.Designer.cs">
+      <DependentUpon>202005201745439_PopulateGenreTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\GenreType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -328,6 +345,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005201650406_ChangeBirthDateToNullable.resx">
       <DependentUpon>202005201650406_ChangeBirthDateToNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201735223_EmptyMigration.resx">
+      <DependentUpon>202005201735223_EmptyMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201739029_DbSetMovies.resx">
+      <DependentUpon>202005201739029_DbSetMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201744313_AddGenreType.resx">
+      <DependentUpon>202005201744313_AddGenreType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005201745439_PopulateGenreTypes.resx">
+      <DependentUpon>202005201745439_PopulateGenreTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

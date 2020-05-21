@@ -243,6 +243,10 @@
     <Compile Include="Migrations\202005201837227_RequireMovieName.Designer.cs">
       <DependentUpon>202005201837227_RequireMovieName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005211527401_UpdateCustomerPropIsSubsbricedToNewsletter.cs" />
+    <Compile Include="Migrations\202005211527401_UpdateCustomerPropIsSubsbricedToNewsletter.Designer.cs">
+      <DependentUpon>202005211527401_UpdateCustomerPropIsSubsbricedToNewsletter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -250,6 +254,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -390,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005201837227_RequireMovieName.resx">
       <DependentUpon>202005201837227_RequireMovieName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005211527401_UpdateCustomerPropIsSubsbricedToNewsletter.resx">
+      <DependentUpon>202005211527401_UpdateCustomerPropIsSubsbricedToNewsletter.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

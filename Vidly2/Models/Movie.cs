@@ -31,5 +31,7 @@ namespace Vidly.Models
         [Required]
         [Range(1,20)]
         public short Stock { get; set; }
+
+        public short NumberAvailable { get; set; }
     }
 }

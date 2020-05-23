@@ -22,10 +22,16 @@ namespace Vidly2.Controllers.API
         }
 
         //GET /api/movies
-        public IEnumerable<MovieDto> GetMovies()
+        public IEnumerable<MovieDto> GetMovies(string query = null)
         {
-            return _context.Movies
+            var movieQuery = _context.Movies
                 .Include(m => m.GenreType)
+                .Where(m => m.NumberAvailable > 0);
+
+            if (!String.IsNullOrWhiteSpace(query))
+                movieQuery = movieQuery.Where(m => m.Name.Contains(query));
+
+            return movieQuery
                 .ToList()
                 .Select(Mapper.Map<Movie, MovieDto>);
         }
@@ -51,6 +57,7 @@ namespace Vidly2.Controllers.API
             var movie = Mapper.Map<MovieDto, Movie>(movieDto);
 
             movie.DateAdded = DateTime.Now;
+            movie.NumberAvailable = movie.Stock;
             _context.Movies.Add(movie);
             _context.SaveChanges();
 

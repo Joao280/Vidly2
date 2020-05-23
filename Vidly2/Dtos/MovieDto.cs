@@ -26,5 +26,8 @@ namespace Vidly2.Dtos
         [Required]
         [Range(1, 20)]
         public short Stock { get; set; }
+
+        [Required]
+        public short NumberAvailable { get; set; }
     }
 }
